@@ -9,12 +9,14 @@
     <h1>Day Finder</h1>
     <h3>Enter in a date and find what day it lands one!</h3>
     <form id="formOne">
-      Month:<input id='monthInput' type="number" name="dateInput" class="form-control">
-      Day:<input id='dayInput'type="number" name="dateInput" class="form-control">
-      Year:<input id='yearInput' type="number" name="dateInput" class="form-control">
+      Month:<input id='monthInput' type="number" name="dateInput" class="form-control" min='1' max='12' required>
+      Day:<input id='dayInput'type="number" name="dateInput" class="form-control" min='1' max='31' required>
+      Year:<input id='yearInput' type="number" name="dateInput" class="form-control" min='1900' max='2500' required>
       <br>
       <button type="submit" class='btn btn-warning' name="button">Submit</button>
     </form>
+    <div class='output'>
+    </div>
   </div>
 </body>
 </html>

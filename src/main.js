@@ -1,3 +1,4 @@
+import { CalculateDay } from "./weekday-calculator.js";
 import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -10,6 +11,7 @@ $(document).ready(function(){
     const day = $('#dayInput').val();
     const year = $('#yearInput').val();
     const complete = month + '/' + day + '/' + year
-    console.log(complete);
+    const result = new CalculateDay(complete);
+    $('.output').text(result.returnResult());
   });
 });
