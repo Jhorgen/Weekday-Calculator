@@ -5,6 +5,6 @@ export class CalculateDay {
   returnResult() {
     const weekDays = ['Sunday', 'Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
     const userDate = new Date(this.date);
-    return weekDays[userDate.getDay()];
+    return weekDays[userDate.getDay()]
   }
 }
